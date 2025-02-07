@@ -1,0 +1,21 @@
+{
+  "name": "discord-openapi-types",
+  "version": "10.0.2",
+  "description": "Discord OpenAPI types. Generated from https://github.com/discord/discord-api-spec",
+  "type": "module",
+  "scripts": {
+    "build": "openapi-typescript repo/specs/openapi.json -o dist/index.d.ts",
+    "pull": "git -C repo pull || git clone https://github.com/discord/discord-api-spec repo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lecafard/node-db-ids.git"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.6.1"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ]
+}
